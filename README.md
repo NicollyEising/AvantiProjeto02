@@ -1,4 +1,4 @@
-# React App
+# Busca de Perfis no GitHub
 
 Aplicação desenvolvida em React para pesquisar perfis públicos do GitHub por nome de usuário. Os dados são obtidos diretamente da GitHub API.
 
@@ -16,7 +16,7 @@ Aplicação desenvolvida em React para pesquisar perfis públicos do GitHub por 
 
 * Busca de perfis pelo nome de usuário do GitHub
 
-* Exibição de informações como avatar, nome, bio, número de repositórios, seguidores e seguindo
+* Exibição de informações como avatar, nome e bio.
 
 ### Instalação e Execução
 
