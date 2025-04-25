@@ -1,0 +1,285 @@
+html,
+body {
+  /* Remove margens e preenchimentos padrão, oculta rolagem horizontal e vertical */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: #1f1f1f !important; 
+  color: white; 
+}
+
+.form-control {
+  /* Estiliza campos de formulário com borda invisível e largura vertical grande */
+  border: 1px solid transparent !important;
+  width: 100vh !important;
+}
+
+.backgroundNone {
+  /* Remove fundo */
+  background-color: transparent !important;
+}
+
+.radial {
+  /* Cria um gradiente radial azul em forma de círculo */
+  background-image: radial-gradient(
+    circle,
+    rgba(0, 123, 255, 1) 0%,
+    rgba(0, 123, 255, 0) 30%
+  );
+  width: 100vw;
+  height: 100vw;
+  border-radius: 50%;
+  position: absolute;
+  top: 18vh;
+  right: -35vw;
+  transform: translateY(-50%);
+  margin-bottom: -50vh;
+  z-index: 1; /* Coloca atrás dos elementos com z-index maior */
+}
+
+.radial-2 {
+  /* Segundo círculo radial com dimensões diferentes */
+  background-image: radial-gradient(
+    circle,
+    rgba(0, 123, 255, 1) 0%,
+    rgba(0, 123, 255, 0) 30%
+  );
+  width: 70vw;
+  height: 70vw;
+  border-radius: 50%;
+  position: absolute;
+  top: 60vh;
+  right: 68vw;
+  transform: translateY(-50%);
+  margin-bottom: -50vh;
+  z-index: 1;
+}
+
+.overlay {
+  /* Camada sobreposta com conteúdo centralizado e fundo preto */
+  position: relative;
+  z-index: 2;
+  padding: 0px 20vw !important;
+  top: -8vw;
+  background-color: black;
+  max-width: 80vw !important;
+  max-height: 200vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-center;
+  align-items: flex-center;
+  text-align: center;
+}
+
+.halftone {
+  /* Cria efeito pontilhado com gradiente radial repetido */
+  width: 200px;
+  height: 200px;
+  background-image: radial-gradient(
+    rgba(128, 128, 128, 0.1) 2px,
+    transparent 1px
+  );
+  background-size: 13px 13px;
+  background-repeat: repeat;
+  position: relative;
+  z-index: 1;
+  left: 5vw;
+  top: 2vw;
+}
+
+/* Ícone animado de carregamento (círculo giratório) */
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 8px solid #005cff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); /* Gira a partir de 0° */
+  }
+  100% {
+    transform: rotate(360deg); /* Gira até 360° continuamente */
+  }
+}
+
+.search-box {
+  /* Caixa de busca com layout em coluna e fundo preto */
+  width: 50vh;
+  height: 70vh;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-box input {
+  /* Estiliza campos de entrada dentro da caixa de busca */
+  width: 100%;
+  padding: 20px 10px !important;
+}
+
+.search-box input::placeholder {
+  /* Estiliza texto do placeholder */
+  font-size: 1.2em;
+  color: black;
+  font-weight: 500 !important;
+}
+
+.title {
+  /* Estilização do título principal */
+  font-size: 60px;
+  font-weight: 500 !important;
+  margin: 20px -50px;
+}
+
+.notFound {
+  /* Estilo para mensagem de erro ou resultado não encontrado */
+  display: flex;
+  justify-content: center;
+  background-color: #d9d9d9;
+  min-width: 50vw;
+  border-radius: 10px;
+  padding: 1.5vh 5vh;
+  color: red;
+  font-size: 20px;
+}
+
+.search-box button {
+  /* Botões dentro da caixa de busca */
+  width: 20%;
+  color: white !important;
+}
+
+.search-input-group {
+  /* Agrupamento de input e botão em linha */
+  display: flex;
+  width: 100%;
+}
+
+.search-input-group input {
+  /* Estiliza campo de entrada com borda e cantos arredondados à esquerda */
+  border: 1px solid white !important;
+  border-radius: 10px 0px 0px 10px;
+  color: black;
+  padding: 10px;
+}
+
+.search-input-group button {
+  /* Botão ao lado do input com borda azul */
+  border: 1px solid white !important;
+  border-radius: 10px;
+  background-color: #005cff;
+  color: black;
+  margin-left: -13px;
+}
+
+.search-input-group button:hover {
+  /* Mantém a cor de fundo no hover */
+  background-color: #005cff;
+}
+
+.profile {
+  /* Container de perfil com fundo cinza claro */
+  display: flex;
+  justify-content: start;
+  background-color: #d9d9d9;
+  min-width: 50vw;
+  border-radius: 20px;
+  padding: 1.5vh 5vh;
+}
+
+.profile img {
+  /* Imagem do perfil em formato circular */
+  width: 30%;
+  border-radius: 50%;
+  border: 3px solid #005cff;
+}
+
+.profile-container {
+  /* Alinha imagem e texto do perfil lado a lado */
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-left: 2vw;
+}
+
+.profile-text {
+  /* Alinha texto do perfil à esquerda */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.profile-text h5 {
+  /*Título em destaque */
+  color: #005cff;
+  font-weight: 700 !important;
+}
+
+.profile-text p {
+  /*Alinhamento à esquerda*/
+  color: black;
+  justify-content: start;
+  text-align: start;
+}
+
+.fa-github {
+  /* Ícone do GitHub com tamanho ajustado*/
+  font-size: 1.2em;
+}
+
+/* Responsividade para telas com largura máxima de 992px */
+@media (max-width: 992px) {
+  .radial {
+    /* Ajusta o tamanho e posição do círculo*/
+    width: 200vw;
+    height: 200vw;
+    top: 10vh;
+    right: -100vw;
+    margin-bottom: -40vh;
+  }
+
+  .radial-2 {
+    width: 200vw;
+    height: 200vw;
+    top: 65vh;
+    right: 10vw;
+    margin-bottom: -45vh;
+  }
+
+  .overlay {
+    /* Reduz margens e ajusta posicionamento*/
+    top: -30vw;
+    margin: 0px 8vw !important;
+    padding: 0px 5vw !important;
+    right: 6.5vw !important;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    min-width: 92vw;
+  }
+
+  .profile img {
+    /* Ajuste da imagem do perfil*/
+    margin-top: 0vw;
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile {
+    /*rolagem vertical*/
+    overflow-y: scroll;
+  }
+}
