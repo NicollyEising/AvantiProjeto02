@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# React App
 
 Aplicação desenvolvida em React para pesquisar perfis públicos do GitHub por nome de usuário. Os dados são obtidos diretamente da GitHub API.
 
